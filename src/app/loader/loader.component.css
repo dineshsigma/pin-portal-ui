@@ -1,0 +1,26 @@
+.loading-spinner{    
+    background-color: rgba(0, 0, 0, 0.32);
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+}
+
+.loading-spinner img{
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.loading-message{
+    text-align: center;
+    align-self: start;
+}

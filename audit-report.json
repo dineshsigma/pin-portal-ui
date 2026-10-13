@@ -1,0 +1,92 @@
+{
+  "auditReportVersion": 2,
+  "vulnerabilities": {
+    "extract-zip": {
+      "name": "extract-zip",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1139346,
+          "name": "extract-zip",
+          "dependency": "extract-zip",
+          "title": "extract-zip unvalidated symlink path traversal",
+          "url": "https://github.com/advisories/GHSA-jmr9-qjv8-65gv",
+          "severity": "high",
+          "cwe": [
+            "CWE-22"
+          ],
+          "cvss": {
+            "score": 8.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N"
+          },
+          "range": "<=2.0.1"
+        },
+        {
+          "source": 1193685,
+          "name": "extract-zip",
+          "dependency": "extract-zip",
+          "title": "extract-zip allows arbitrary file writes through symlink archive entries",
+          "url": "https://github.com/advisories/GHSA-7pqw-9j4j-h8q3",
+          "severity": "high",
+          "cwe": [
+            "CWE-22"
+          ],
+          "cvss": {
+            "score": 8.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:H"
+          },
+          "range": "<=2.0.1"
+        }
+      ],
+      "effects": [
+        "owasp-dependency-check"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/extract-zip"
+      ],
+      "fixAvailable": {
+        "name": "owasp-dependency-check",
+        "version": "0.0.3",
+        "isSemVerMajor": true
+      }
+    },
+    "owasp-dependency-check": {
+      "name": "owasp-dependency-check",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "extract-zip"
+      ],
+      "effects": [],
+      "range": ">=0.0.4",
+      "nodes": [
+        "node_modules/owasp-dependency-check"
+      ],
+      "fixAvailable": {
+        "name": "owasp-dependency-check",
+        "version": "0.0.3",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 2,
+      "critical": 0,
+      "total": 2
+    },
+    "dependencies": {
+      "prod": 17,
+      "dev": 494,
+      "optional": 142,
+      "peer": 1,
+      "peerOptional": 0,
+      "total": 511
+    }
+  }
+}

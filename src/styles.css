@@ -1,0 +1,193 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    color: #999;
+    background: #f5f5f5;
+    /* font-family: 'Poppins', sans-serif !important; */
+    font-family: 'VAG Rounded Std', 'Poppins', sans-serif !important;
+}
+@font-face {
+    font-family: 'VAG Rounded Std';
+    src: url('./assets/fonts/VAG_Rounded_Std_Thin.otf') format('opentype');
+}
+@font-face {
+    font-family: 'VAG Rounded Std Black';
+    src: url('./assets/fonts/VAG_Rounded_Std_Black.otf') format('opentype');
+}
+@font-face {
+    font-family: 'VAG Rounded Std Bold';
+    src: url('./assets/fonts/VAG_Rounded_Std_Bold.otf') format('opentype');
+}
+.form-control {
+    box-shadow: none;
+    border-color: #ddd;
+}
+.form-control:focus {
+    border-color: #4aba70; 
+}
+.login-form {
+    width: 400px;
+    margin: 0 auto;
+    padding-top:20px;
+}
+.login-form form {
+    color: #434343;
+    border-radius: 1px;
+    margin-bottom: 10px;
+    background: #fff;
+    padding: 20px 30px;
+}
+.login-form h4 {
+    color: #652D86;
+    font-size: 1.5em;
+    font-family: 'VAG Rounded Std Bold', 'Poppins', Arial, sans-serif;
+    line-height: 1.33;
+    margin-bottom: 0;
+}
+.login-form h6 {
+    color: #777777;
+    font-family: 'VAG Rounded Std', 'Poppins', Arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.75;
+    font-size: 1.125rem!important;
+}
+.login-form p {
+    color: rgba(0, 0, 0, 0.87);
+    font-family: 'VAG Rounded Std', 'Poppins', Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1.125rem!important;
+}
+.login-form .form-group {
+    margin-bottom: 20px;
+}
+.login-form .form-control, .login-form .btn {
+    min-height: 40px;
+    border-radius: 2px; 
+    transition: all 0.5s;
+    border: none;
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.25);
+}
+.form-control:focus{
+    box-shadow: none !important;
+    border-color: #000 !important;
+}
+.form-floating > .form-control:focus, .form-floating > .form-control:not(:placeholder-shown){
+    padding-bottom: 0 !important;
+}
+.form-floating > .form-control {
+    padding: 1.5rem 0rem 0.5rem 0rem !important;
+}
+.form-floating > label{
+    padding: 1rem 0rem 0.5rem 0rem !important;
+}
+.login-form .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.login-form .btn {
+    background: #6f358d;
+    border: none;
+    font-family: 'VAG Rounded Std Bold', 'Poppins', Arial, sans-serif;
+    font-weight: 400;
+    line-height: 34px;
+    font-size: 1rem;
+}
+.btn-primary:disabled, .btn-primary.disabled{
+    background-color: rgba(0, 0, 0, 0.2) !important;
+}
+.login-form .btn:hover, .login-form .btn:focus {
+    background: #3a0457;
+}
+.login-form .checkbox-inline {
+    float: left;
+}
+.login-form input[type="checkbox"] {
+    margin-top: 2px;
+}
+.login-form .forgot-link {
+    float: right;
+}
+.login-form .small {
+    font-size: 13px;
+}
+.login-form a {
+    color: #6f358d;
+}
+.form-floating:focus-within {
+    z-index: 2;
+}
+
+input.user-key {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+input.reg-no {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.form-control {
+    background:rgba(255,255,255,0.9);       
+}
+
+.form-control:focus {
+    border-color:#ced4da;
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+}
+.form-floating > label{
+    top: 15px !important;
+    color: rgba(0, 0, 0, 0.50) !important;
+}
+.form-floating > .form-control:focus ~ label, .form-floating > .form-control:not(:placeholder-shown) ~ label, .form-floating > .form-select ~ label{
+    top: 0px !important;
+    color: rgba(0, 0, 0, 1) !important;
+}
+.error {
+    color: #E4002B;
+    margin: 0;
+    font-size: 0.75rem;
+    text-align: left;
+    margin-top: 8px;
+    min-height: 1em;
+    font-family: VAG Rounded Std, Helvetica, Arial, sans-serif;
+    line-height: 1em;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
+.login-form .form-control.error-control{
+    border-bottom: 1.5px solid #E4002B !important
+}
+.login-form .btn.btn-outline-primary{
+    background: #ffffff;
+    border: 2px solid #6f358d;
+    color: #6f358d;
+    line-height: 30px;
+}
+.eye-icon{
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 30px;
+}
+.eye-icon em{
+    color: #6f358d;
+    font-size: 1.3rem;
+}
